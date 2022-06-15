@@ -4,53 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulario meu</title>
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
     <div>
         <h1 id="titulo">Cadastro de DEVs</h1>
         <p id="subtitulo">complete suas informações</p>
     </div>
+
     <form action="">
         <fieldset class="grupo">
+
             <div class="campo">
-                <label for="nome">Nome:</label>
+                <label for="nome"><strong>Nome:</strong> </label>
                 <input type="text" name="nome" id="nome" required>
             </div>
+
             <div class="campo">
-                <label for="sobrenome">Sobrenome:</label>
+                <label for="sobrenome"><strong>Sobrenome:</strong> </label>
                 <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
+
             <div class="campo">
-                <label for="email">Email:</label>
+                <label for="email"><strong>Email:</strong> </label>
                 <input type="email" name="email" id="email" required>
             </div>
+
             <div class="campo">
-                <label for="">de que lado da aplicação você desenvolve?</label>
-                <label for="">
+                <label><strong>de que lado da aplicação você desenvolve?</strong></label>
+                <label>
                     <input type="radio" name="devweb" value="front-end">Front-end
                 </label>
-                <label for="">
+                <label>
                     <input type="radio" name="devweb" value="back-end">Back-end
                 </label>
-                <label for="">
+                <label>
                     <input type="radio" name="devweb" value="fullstack">Fullstack
                 </label>
+
             </div>
             <div class="campo">
-                <label for="senioridade">senioridade:</label>
+                <label for="senioridade"><strong>Senioridade</strong></label>
                 <select name="senioridade" id="senioridade">
                     <option selected disabled value="">selecione</option>
-                    <option value="">Junior</option>
-                    <option value="">Pleno</option>
-                    <option value="">Senior</option>
+                    <option>Júnior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
                 </select>
             </div>
+
         </fieldset>
         <fieldset class="grupo">
             <div id="check">
-                <label for="">selecione as tecnologias que utiliza:</label><br><br>
+                <label for=""><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tech1" name="tech1" value="HTML">
                 <label for="tech1">HTML</label>
                 <input type="checkbox" id="tech2" name="tech2" value="CSS">
@@ -70,10 +78,11 @@
         </fieldset>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="">Conte um pouco sobre a sua experiência:</label>
-                <textarea name="exp" id="exp"  rows="6" style="width: 26em"></textarea>
+                <br>
+                <label for=""><strong>Conte um pouco sobre a sua experiência:</strong></label>
+                <textarea rows="6" style="width: 26em" id="exp" name="exp"></textarea>
             </div>
-            <button type="submit" class="botao">Concluído</button>
+            <button type="submit" class="botao" onsubmit="">Concluído</button>
         </fieldset>
     </form>
 </body>
